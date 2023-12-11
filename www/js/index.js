@@ -29,15 +29,7 @@ function onDeviceReady() {
 
     setTimeout(() => {
         console.log('init onesignal');
-        window.plugins.OneSignal.setLogLevel(6);
-        window.plugins.OneSignal.setAppId("52d017f3-e06f-4a84-a7f0-317abdae8e4d");
-
-        window.plugins.OneSignal.setNotificationOpenedHandler(function (res) {
-            console.log('notificationOpenedCallback: ', res);
-        });
-
-        window.plugins.OneSignal.promptForPushNotificationsWithUserResponse(function (accepted) {
-            console.log("User accepted notifications: " + accepted);
-        });
+        // window.plugins.OneSignal.setLogLevel({ logLevel: 6, visualLevel: 0 });
+        window.plugins.OneSignal.initialize("52d017f3-e06f-4a84-a7f0-317abdae8e4d");
     }, 5000);
 }

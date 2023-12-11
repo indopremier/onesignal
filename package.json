@@ -15,15 +15,15 @@
   "devDependencies": {
     "cordova-android": "^9.1.0",
     "cordova-plugin-android-permissions": "^1.1.5",
-    "onesignal-cordova-plugin": "^3.3.0"
+    "onesignal-cordova-plugin": "^5.0.4"
   },
   "cordova": {
     "platforms": [
       "android"
     ],
     "plugins": {
-      "onesignal-cordova-plugin": {},
-      "cordova-plugin-android-permissions": {}
+      "cordova-plugin-android-permissions": {},
+      "onesignal-cordova-plugin": {}
     }
   }
 }
